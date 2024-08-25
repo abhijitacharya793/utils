@@ -155,6 +155,6 @@ if __name__ == '__main__':
     process_results("Directory Traversal using Content Provider", dirtraversal_info)
 
     html_result += "</body></html>"
-    with open("report.html", "w", encoding="utf-8") as f:
+    with open(f"report{package_name}.html", "w", encoding="utf-8") as f:
         f.write(html_result)
-    print("[*] 'report.html' with testing results saved")
+    print(f"[*] 'report{package_name}.html' with testing results saved")
